@@ -1,12 +1,11 @@
-# Programming Languages for Data Analysis (CS504) — Project
+# COVID-19 in China — Regression, Classification and Clustering
 
-Course project for **Programming Languages for Data Analysis (CS504)**, Department of Computer
-Science, Bishop's University.
+End-to-end time-series analysis of daily COVID-19 confirmed cases across Chinese provinces, covering sliding-window regression, direction classification, and geographic clustering.
 
-## COVID-19 in China — regression, classification and clustering
+## Overview
 
 Using daily confirmed COVID-19 cases for Chinese provinces, the project works through four parts.
-The solution is in [`Project_CS504.ipynb`](Project_CS504.ipynb).
+The full implementation and analysis is in [`covid19_regression_classification.ipynb`](covid19_regression_classification.ipynb).
 
 ### 1. Data preparation
 Slide a six-day window over Beijing's series: the first five days are the predictors `x1`..`x5` and
@@ -32,15 +31,15 @@ supported: case similarity is driven by outbreak magnitude (Hubei is an outlier)
 
 ```bash
 pip install numpy pandas matplotlib scikit-learn
-jupyter notebook Project_CS504.ipynb
+jupyter notebook covid19_regression_classification.ipynb
 ```
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `Project_CS504.ipynb` | Full solution (Parts 1–4) |
-| `Project_CS504.pdf` | Project description |
+| `covid19_regression_classification.ipynb` | Full implementation and analysis (Parts 1–4) |
+| `PROJECT_BRIEF.pdf` | Project brief (goals, objectives, outcomes) |
 | `daily_confirmed_cases.csv` | Daily confirmed cases per province |
 | `coordinates.csv` | Latitude/longitude of the provinces |
 | `Beijing_covid19_regression.csv` | Generated sliding-window regression dataset (Part 1) |
